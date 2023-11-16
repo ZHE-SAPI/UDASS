@@ -8,8 +8,13 @@ Abstract: Video semantic segmentation is a pivotal aspect of video representatio
 
 Index Terms: Domain adaptation, Video semantic segmentation, Feature alignment, Domain shift.
 
+
+
+
+
+
 A short video demo of our results:
 
 
-https://github.com/ZHE-SAPI/DA-STC/assets/52643313/0697804f-5758-4fcf-a932-1a8c24d56a50
+https://github.com/ZHE-SAPI/DA-STC/assets/52643313/d5738a66-8e77-4718-a851-4218d500f800
 
