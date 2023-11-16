@@ -7,3 +7,9 @@ The code will be uploaded soon.
 Abstract: Video semantic segmentation is a pivotal aspect of video representation learning.  However, significant domain shifts often lead to performance degradation of supervised source models when applied to unseen target videos without annotation. In this work, we propose ......
 
 Index Terms: Domain adaptation, Video semantic segmentation, Feature alignment, Domain shift.
+
+A short video demo of our results:
+
+
+https://github.com/ZHE-SAPI/DA-STC/assets/52643313/0697804f-5758-4fcf-a932-1a8c24d56a50
+
