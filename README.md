@@ -54,7 +54,7 @@ Download here and put them under  .\DASTC\pretrained_models.
  
 [VIPER → Cityscapes-Seq](https://drive.google.com/file/d/1ltMy4ekKczo6saDavQtaZraDwJtWCX9F/view?usp=drive_link)     
 |road |side. |buil. |fenc. |light |sign |vege. |terr. |sky |pers. |car| truc.| bus| mot.| bike| mIOU
-| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:|
+| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:| :----:|
 |91.6| 51.4 |87.0 |24.1 |32.3| 37.2| 84.1| 28.4 |84.8| 64.4| 85.7 |41.4 |46.5| 34.0| 49.6 |56.2|
 
 # Optical Flow Estimation  
