@@ -30,7 +30,7 @@ A longer video demo for [more cases](https://drive.google.com/file/d/1lPZkvsY3rB
 
 3. clone the current repo   
 ``` 
-    git clone https://github.com/ZHE-SAPI/DA-STC.git  
+    git clone https://github.com/ZHE-SAPI/DA-STC    
     pip install -r ./DASTC/requirements.txt
 ```
 
