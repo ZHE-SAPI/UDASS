@@ -1,6 +1,6 @@
 # DA-STC
 The official repo for "DA-STC: Domain Adaptive Video Semantic Segmentation via Spatio-Temporal Consistency".
-paper [https://arxiv.org/abs/2311.13254]
+paper] (https://arxiv.org/abs/2311.13254)
 The model and test code is unloaded, and the full code will be uploaded soon.
 
 
