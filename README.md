@@ -1,7 +1,6 @@
 # DA-STC
-<mark><strong><big> The official repo for "DA-STC: Domain Adaptive Video Semantic Segmentation via Spatio-Temporal Consistency".</font>     
+The official repo for "DA-STC: Domain Adaptive Video Semantic Segmentation via Spatio-Temporal Consistency". [[paper](https://arxiv.org/abs/2311.13254)]        
 The model and test code is unloaded, and the train code will be uploaded soon! 
-[[paper](https://arxiv.org/abs/2311.13254)]    
 
 
 # Abstract
@@ -48,12 +47,13 @@ Please refer to the structure of the folder .\video_seg\DASTC\data
 
 # Pretrained Models  
 Download here and put them under  .\DASTC\pretrained_models.  
- [SYNTHIA-Seq → Cityscapes-Seq](https://drive.google.com/file/d/1ltMy4ekKczo6saDavQtaZraDwJtWCX9F/view?usp=drive_link)   
+[SYNTHIA-Seq → Cityscapes-Seq](https://drive.google.com/file/d/1ltMy4ekKczo6saDavQtaZraDwJtWCX9F/view?usp=drive_link)   
+ 
 [VIPER → Cityscapes-Seq](https://drive.google.com/file/d/1ltMy4ekKczo6saDavQtaZraDwJtWCX9F/view?usp=drive_link)     
 
 
 # Optical Flow Estimation  
-Please first refer to [https://github.com/xing0047/TPS#optical-flow-estimation](https://github.com/Dayan-Guan/DA-VSN/issues/1), the full optical data will be unloaded soon.  
+Please first refer to [FlowNet2](https://github.com/NVIDIA/flownet2-pytorch), [Nvidia Semantic Segmentation](https://github.com/NVIDIA/semantic-segmentation), the full optical data will be unloaded soon.  
 
 
 # Train and Test  
