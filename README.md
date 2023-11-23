@@ -19,7 +19,7 @@ https://github.com/ZHE-SAPI/DA-STC/assets/52643313/d5738a66-8e77-4718-a851-4218d
 
 
 # Installation
-1. create conda environment
+1. create conda environment  
     `conda create -n TPS python=3.6`  
     `conda activate TPS`  
     `conda install -c menpo opencv`  
