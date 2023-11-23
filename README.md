@@ -20,10 +20,10 @@ https://github.com/ZHE-SAPI/DA-STC/assets/52643313/d5738a66-8e77-4718-a851-4218d
 
 # Installation
 1. create conda environment
-    $conda create -n TPS python=3.6
-    conda activate TPS
+    `conda create -n TPS python=3.6`
+    `conda activate TPS
     conda install -c menpo opencv
-    pip install torch==1.2.0 torchvision==0.4.0$
+    pip install torch==1.2.0 torchvision==0.4.0`
 2.clone the ADVENT repo
     git clone https://github.com/valeoai/ADVENT
     pip install -e ./ADVENT
