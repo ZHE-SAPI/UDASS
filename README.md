@@ -36,7 +36,7 @@ A longer video demo for [more cases](https://drive.google.com/file/d/1lPZkvsY3rB
 
 4. resample2d dependency  
 ``` 
-    cd \DASTC\dastc\utils\resample2d_package  
+    cd /DASTC/dastc/utils/resample2d_package  
     python setup.py build  
     python setup.py install
 ``` 
