@@ -10,9 +10,9 @@ Video semantic segmentation is a pivotal aspect of video representation learning
 Index Terms: Domain adaptation, video semantic segmentation, feature alignment, spatio-temporal consistency.
 
 
-# Quantitative results
-Preview of the results on two challenging synthetic-to-real video semantic segmentation tasks
-![openfigure](https://github.com/ZHE-SAPI/DA-STC/assets/52643313/7232a185-3ecf-4bdc-a5df-5a149fbaedc1)   
+%# Quantitative results
+%Preview of the results on two challenging synthetic-to-real video semantic segmentation tasks
+%![openfigure](https://github.com/ZHE-SAPI/DA-STC/assets/52643313/7232a185-3ecf-4bdc-a5df-5a149fbaedc1)   
 
 # A short video demo of our results:
 https://github.com/ZHE-SAPI/DA-STC/assets/52643313/d5738a66-8e77-4718-a851-4218d500f800
@@ -24,39 +24,40 @@ https://github.com/ZHE-SAPI/DA-STC/assets/52643313/d5738a66-8e77-4718-a851-4218d
     `conda activate TPS`  
     `conda install -c menpo opencv`  
     `pip install torch==1.2.0 torchvision==0.4.0`  
-2.clone the ADVENT repo
-    git clone https://github.com/valeoai/ADVENT
-    pip install -e ./ADVENT
-3. clone the current repo
-    git clone https://github.com/ZHE-SAPI/DA-STC.git
-    pip install -r ./DASTC/requirements.txt
-4. resample2d dependency
-    cd \DASTC\dastc\utils\resample2d_package
-    python setup.py build
-    python setup.py install
+2.clone the ADVENT repo  
+    ·git clone https://github.com/valeoai/ADVENT`  
+    `pip install -e ./ADVENT`  
+3. clone the current repo   
+    `git clone https://github.com/ZHE-SAPI/DA-STC.git`  
+    `pip install -r ./DASTC/requirements.txt`  
+4. resample2d dependency  
+    `cd \DASTC\dastc\utils\resample2d_package`  
+    `python setup.py build`  
+    `python setup.py install`   
 
-# Data Preparation
-please refer to the structure of the folder \video_seg\DASTC\data
+# Data Preparation  
+please refer to the structure of the folder \video_seg\DASTC\data  
 
-# Pretrained Models
-Download here and put them under  DASTC\pretrained_models.
+# Pretrained Models  
+Download here and put them under  DASTC\pretrained_models.  
 
-# Optical Flow Estimation
-pleasr first refer to [https://github.com/xing0047/TPS#optical-flow-estimation](https://github.com/Dayan-Guan/DA-VSN/issues/1), the full optical data will be unloaded soon.
+# Optical Flow Estimation  
+pleasr first refer to [https://github.com/xing0047/TPS#optical-flow-estimation](https://github.com/Dayan-Guan/DA-VSN/issues/1), the full optical data will be unloaded soon.  
 
-# Train and Test
-1. Train
-   
-cd /DASTC
-python ./dastc/scripts/train_DAVSS_DSF_cd_ablation_syn.py --cfg ./dastc/scripts/configs/dastc_syn2city.yml
-python ./dastc/scripts/train_DAVSS_DSF_cd_ablation_viper.py --cfg ./dastc/scripts/configs/dastc_viper2city.yml
-(train code will be uploaded soon.)
+# Train and Test  
+1. Train  
+    
+`cd /DASTC`  
+`python ./dastc/scripts/train_DAVSS_DSF_cd_ablation_syn.py --cfg ./dastc/scripts/configs/dastc_syn2city.yml`   
+`python ./dastc/scripts/train_DAVSS_DSF_cd_ablation_viper.py --cfg ./dastc/scripts/configs/dastc_viper2city.yml`    
 
-2. Test
+(train code will be uploaded soon.)  
 
-cd /DASTC
-python ./dastc/scripts/test_DAVSS_DSF_cd_ablation_syn.py --cfg ./dastc/scripts/configs/dastc_syn2city.yml
-python ./dastc/scripts/test_DAVSS_DSF_cd_ablation_viper.py --cfg ./dastc/scripts/configs/dastc_viper2city.yml
+2. Test  
 
-# Acknowledgement
-This codebase is heavily borrowed from [https://github.com/Dayan-Guan/DA-VSN], [https://github.com/GaoLii/DSP], [https://github.com/microsoft/ProDA/tree/main].
+`cd /DASTC`  
+`python ./dastc/scripts/test_DAVSS_DSF_cd_ablation_syn.py --cfg ./dastc/scripts/configs/dastc_syn2city.yml`  
+`python ./dastc/scripts/test_DAVSS_DSF_cd_ablation_viper.py --cfg ./dastc/scripts/configs/dastc_viper2city.yml`  
+ 
+# Acknowledgement  
+This codebase is heavily borrowed from [https://github.com/Dayan-Guan/DA-VSN], [https://github.com/GaoLii/DSP], [https://github.com/microsoft/ProDA/tree/main].  
