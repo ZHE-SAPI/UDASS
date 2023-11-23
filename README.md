@@ -43,7 +43,9 @@ A longer video demo for [more cases](https://drive.google.com/file/d/1lPZkvsY3rB
 
 # Data Preparation  
 Please refer to the structure of the folder .\video_seg\DASTC\data  
-
+1. [Cityscapes-Seq](https://www.cityscapes-dataset.com/)  
+2. [Synthia-Seq](https://synthia-dataset.net/)    
+3. [Viper](https://www.playing-for-benchmarks.org/)  
 
 # Pretrained Models  
 Download here and put them under  .\DASTC\pretrained_models.  
