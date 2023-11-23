@@ -12,7 +12,8 @@ Index Terms: Domain adaptation, video semantic segmentation, feature alignment, 
 
 # Quantitative results
 Preview of the results on two challenging synthetic-to-real video semantic segmentation tasks
-[image](https://github.com/ZHE-SAPI/DA-STC/files/13447913/openfigure.pdf)
+![openfigure](https://github.com/ZHE-SAPI/DA-STC/assets/52643313/7232a185-3ecf-4bdc-a5df-5a149fbaedc1)
+
 
 
 
