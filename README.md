@@ -1,5 +1,5 @@
 # DA-STC
-The official repo for "DA-STC: Domain Adaptive Video Semantic Segmentation via Spatio-Temporal Consistency". [[paper](https://arxiv.org/abs/2311.13254)]        
+The official repo for "STCL: Spatio-Temporal Consistency Learning for Domain Adaptive Video Semantic Segmentation". [[paper](https://arxiv.org/abs/2311.13254)]        
 The model and test code is unloaded, and the train code will be uploaded soon! 
 
 
