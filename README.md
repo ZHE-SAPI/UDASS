@@ -7,7 +7,7 @@ The official repository for **Unified Domain Adaptive Semantic Segmentation (UDA
 ## 🗞️ News
 
 🎉 Our paper has been **accepted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)**, 2025.  
-Stay tuned for the journal version and updated DOI!
+Please stay tuned for the journal version and updated DOI!
 
 ---
 
