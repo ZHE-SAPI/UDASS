@@ -1,8 +1,8 @@
-### Unified Domain Adaptive Semantic Segmentation
+### Unified Domain Adaptive Semantic Segmentation (Video)
 
-## Main Results
+## 🔍 Main Results
 
-#### SYNTHIA-Seq -> Cityscapes-Seq
+#### 🔁 SYNTHIA-Seq -> Cityscapes-Seq
 
 | Methods                | road           | side.          | buil.          | pole           | light          | sign           | vege.          | sky            | per.           | rider          | car            | mIoU           |
 | ---------------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -13,7 +13,7 @@
 | **QuadMix(CNN)** | 90.8           | 39.9           | **83.2** | 33.2           | 30.1           | 50.7           | 84.8           | 83.2           | 61.2           | 32.7           | 87.4           | 61.5           |
 | **QuadMix(ViT)** | **94.1** | **61.9** | 82.9           | **36.9** | **41.0** | **59.1** | **85.2** | **85.6** | **64.3** | **37.8** | **90.3** | **67.2** |
 
-#### VIPER -> Cityscapes-Seq
+#### 🔁 VIPER -> Cityscapes-Seq
 
 | Methods                | road           | side.          | buil.          | fence          | light          | sign           | vege.          | terr.          | sky            | per.           | car            | truck          | bus            | motor          | bike           | mIoU           |
 | ---------------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -24,7 +24,7 @@
 | **QuadMix(CNN)** | **91.6** | **51.4** | 87.0           | 24.1           | 32.3           | **37.2** | 84.1           | **28.4** | 84.8           | 64.4           | 85.7           | 41.4           | 46.5           | 34.0           | 49.6           | 56.2           |
 | **QuadMix(ViT)** | 87.3           | 43.8           | **87.3** | **25.2** | **40.0** | 36.9           | **86.7** | 20.8           | **90.3** | **65.8** | **86.8** | **48.6** | **65.6** | **37.6** | **49.7** | **58.2** |
 
-## Environment Setup
+## ⚙️ Environment Setup
 
 1. create conda environment
 
@@ -55,7 +55,7 @@ python ./VIDEO/tps/utils/resample2d_package/setup.py build
 python ./VIDEO/tps/utils/resample2d_package/setup.py install
 ```
 
-## Data Preparation
+## 📁 Data Preparation
 
 1. [Cityscapes-Seq](https://www.cityscapes-dataset.com/)
 
@@ -80,22 +80,9 @@ VIDEO/data/SynthiaSeq/
 VIDEO/data/SynthiaSeq/SEQS-04-DAWN/
 ```
 
-## Checkpoints
+## 📁 Optical Flow Estimation
 
-Below, we provide checkpoints of UDASS for the different benchmarks.
-
-```
-VIDEO/pretrained_models
-```
-
-* [video-UDASS(VIT) for Synthia-Seq→Cityscapes-Seq](https://drive.google.com/file/d/1kwzpghUD1UiK6AvQyazSw0gMGYjAUCwe/view?usp=sharing)
-* [video-UDASS(VIT) for VIPER→Cityscapes-Seq](https://drive.google.com/file/d/1OCDnHlz2lJplnPcV7iINOhiRLUTeNm6P/view?usp=sharing)
-* [video-UDASS(CNN) for Synthia-Seq→Cityscapes-Seq](https://drive.google.com/file/d/1XJ5naWs9wuZ8k1r6VRHx6YRF7gK5HuCV/view?usp=sharing)
-* [video-UDASS(CNN) for VIPER→Cityscapes-Seq](https://drive.google.com/file/d/1TGpysDaBkQ3F-NQj9wTL0JJnclQMQmto/view?usp=sharing)
-
-## Optical Flow Estimation
-
-The steps to generate the optical flow (refer to [issue](https://github.com/Dayan-Guan/DA-VSN/issues/1)):
+✅ The steps to generate the optical flow (refer to [issue](https://github.com/Dayan-Guan/DA-VSN/issues/1)):
 
 1. git clone git clone -b sdcnet [https://github.com/NVIDIA/semantic-segmentation.git](https://github.com/NVIDIA/semantic-segmentation.git);
 2. Unzip the files of [video_udass/Code_for_Optical_Flow_Estimation.zip](https://github.com/ZHE-SAPI/UDASS/blob/main/video_udass/Code_for_Optical_Flow_Estimation.zip) and put them in the folder of sdcnet;
@@ -108,9 +95,7 @@ The steps to generate the optical flow (refer to [issue](https://github.com/Daya
    [3] Viper train set: "python Estimated_optical_flow_Viper_train.py --pretrained ../pretrained_models/sdc_cityscapes_vrec.pth.tar --flownet2_checkpoint ../pretrained_models/FlowNet2_checkpoint.pth.tar --source_dir ../../data/viper --target_dir /home/dayan/gdy/adv/snapshots/Estimated_optical_flow_Viper_train--vis --resize 0.533333"
    ```
 
-
-
-For quick preparation, please download the estimated optical flow of all datasets here, and put them as subfolders in the [./VIDEO/data](https://github.com/ZHE-SAPI/UDASS/tree/main/video_udass/VIDEO/data) folder.
+✅ For quick preparation, please download the estimated optical flow of all datasets here, and put them as subfolders in the [./VIDEO/data](https://github.com/ZHE-SAPI/UDASS/tree/main/video_udass/VIDEO/data) folder.
 
 ```
 VIDEO/data/estimated_optical_flow_cityscapes_seq_val/
@@ -122,16 +107,18 @@ VIDEO/data/estimated_optical_flow_synthiaseq_train/
 - Synthia-Seq
 
   [train_folder 1 (unif)](https://pan.baidu.com/s/1pWuMpJBkLUMetjzIx9dbKA?pwd=unif)
+
 - VIPER
 
   [train_folder 1 (unif)](https://pan.baidu.com/s/1IedArcO6OW7fXzs4NvFPIw?pwd=unif),            [train_folder 2 (unif)](https://pan.baidu.com/s/1DPSDZJytSJYvmlr4SksRKA?pwd=unif),            [train_folder 3 (unif)](https://pan.baidu.com/s/1xbkKml5tn1Bvmzskue1pLQ?pwd=unif),            [train_folder 4 (unif)](https://pan.baidu.com/s/1PLZfMKwCNxr65SAnCQbSQw?pwd=unif),            [train_folder 5 (unif)](https://pan.baidu.com/s/1gsTDkKa3unAy5jsfxJR86w?pwd=unif)
+
 - Cityscapes-Seq
 
   [train_folder 1 (unif)](https://pan.baidu.com/s/1SQZp6bqXJih9hBFeDO2fjA?pwd=unif),            [train_folder 2 (unif)](https://pan.baidu.com/s/19rIzZ6KYyo5KR_ikGSOfGA?pwd=unif),            [train_folder 3 (unif)](https://pan.baidu.com/s/1y2XYYJW8MNY0RceZBOvviA?pwd=unif),       |       [val](https://pan.baidu.com/s/10JBF43JeFMFjGSr5e8ittw?pwd=unif)
 
-## Train and Test
+## 🏋️ Train and Test
 
-- Train (the core code will be available soon.)
+- ✅ Train (the core code will be available soon.)
 
 ```
   cd xxxxPATHxxxx/video_udass/VIDEO (Please adjust according to the actual address of your device manually )
@@ -145,7 +132,7 @@ VIDEO/data/estimated_optical_flow_synthiaseq_train/
   python ./tps/scripts_ablation/train_DAVSS_DSF_cd_ablation_31_former.py --cfg ./tps/scripts_ablation/configs/tps_viper2city.yml
 ```
 
-- Test (can in parallel with Train) (run the test code to validate the results.)
+- ✅ Test (can in parallel with Train) (run the test code to validate the results.)
 
 ```
   cd xxxxPATHxxxx/video_udass/VIDEO
@@ -159,7 +146,20 @@ VIDEO/data/estimated_optical_flow_synthiaseq_train/
   python ./tps/scripts_ablation/test_DAVSS_DSF_cd_ablation_31_former.py --cfg ./tps/scripts_ablation/configs/tps_viper2city.yml
 ```
 
-## Acknowledgement
+## 💾 Checkpoints
+
+Below, we provide checkpoints of UDASS for the different benchmarks.
+
+```
+VIDEO/pretrained_models
+```
+
+* [video-UDASS(VIT) for Synthia-Seq→Cityscapes-Seq](https://drive.google.com/file/d/1kwzpghUD1UiK6AvQyazSw0gMGYjAUCwe/view?usp=sharing)
+* [video-UDASS(VIT) for VIPER→Cityscapes-Seq](https://drive.google.com/file/d/1OCDnHlz2lJplnPcV7iINOhiRLUTeNm6P/view?usp=sharing)
+* [video-UDASS(CNN) for Synthia-Seq→Cityscapes-Seq](https://drive.google.com/file/d/1XJ5naWs9wuZ8k1r6VRHx6YRF7gK5HuCV/view?usp=sharing)
+* [video-UDASS(CNN) for VIPER→Cityscapes-Seq](https://drive.google.com/file/d/1TGpysDaBkQ3F-NQj9wTL0JJnclQMQmto/view?usp=sharing)
+
+## 🙏 Acknowledgement
 
 This codebase is is based on the following open-source projects. We thank their
 authors for making the source code publicly available.
