@@ -1,8 +1,8 @@
-# Unified Domain Adaptive Semantic Segmentation
+# Unified Domain Adaptive Semantic Segmentation (Image )
 
-## Main Results
+## 🔍 Main Results
 
-#### GTAV → CITYSCAPES
+### 🔁 GTAV → CITYSCAPES
 
 | Methods                | road           | side.          | buil.          | wall           | fence          | pole           | light          | sign           | vege.          | terr.          | sky            | per.           | rider          | car            | truck          | bus            | train          | moto.          | bike           | mIoU           |
 | ---------------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -14,7 +14,7 @@
 | Freedom(ViT)           | 96.7           | 74.8           | 90.9           | 58.1           | 49.0           | 57.5           | 63.4           | **71.4** | 91.6           | 52.1           | **94.4** | 78.4           | 53.1           | 94.1           | 83.9           | 85.2           | 72.5           | 62.8           | **68.9** | 73.6           |
 | **QuadMix(ViT)** | **97.5** | **80.9** | **91.6** | **62.3** | **57.6** | **58.2** | **64.5** | 71.2           | **91.7** | **52.3** | 94.3           | **80.0** | **55.9** | **94.6** | **86.3** | **90.5** | **82.3** | **65.1** | 68.1           | **76.1** |
 
-#### SYNTHIA → CITYSCAPES
+### 🔁 SYNTHIA → CITYSCAPES
 
 |        Methods        | road           | side.          | buil.          | wall*          | fence*         | pole*          | light          | sign           | vege.          | sky            | per.           | rider          | car            |      bus      |     motor     |      bike      |    mIoU(16)    |    mIoU(13)    |
 | :--------------------: | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | :------------: | :------------: | :------------: | :------------: | :------------: |
@@ -26,7 +26,7 @@
 |      Freedom(ViT)      | **89.4** | 50.8           | **89.3** | **48.8** | 9.3            | 57.3           | **65.1** | 60.1           | **89.9** | 93.7           | 79.4           | 51.6           | 90.5           |      66.0      |      62.3      | **68.1** |      67.0      |      73.6      |
 | **QuadMix(ViT)** | 88.1           | 51.2           | 88.9           | 46.7           | 7.9            | **58.6** | 64.7           | **63.7** | 88.1           | **93.9** | **81.3** | **56.6** | 90.3           | **66.9** | **66.8** |      66.0      | **67.5** | **74.3** |
 
-## Environment Setup
+## ⚙️ Environment Setup
 
 First, please install cuda version 11.0.3 available at [https://developer.nvidia.com/cuda-11-0-3-download-archive](https://developer.nvidia.com/cuda-11-0-3-download-archive). It is required to build mmcv-full later.
 
@@ -48,7 +48,7 @@ pip install mmcv-full==1.3.7  # requires the other packages to be installed firs
 Please, download the MiT-B5 ImageNet weights provided by [SegFormer](https://github.com/NVlabs/SegFormer?tab=readme-ov-file#training)
 from their [OneDrive](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/xieenze_connect_hku_hk/EvOn3l1WyM5JpnMQFSEO5b8B7vrHw9kDaJGII-3N9KNhrg?e=cpydzZ) and put them in the folder `pretrained/`.
 
-## Dataset Setup
+## 📁 Dataset Setup
 
 **Cityscapes:** Please, download leftImg8bit_trainvaltest.zip and
 gt_trainvaltest.zip from [here](https://www.cityscapes-dataset.com/downloads/)
@@ -93,7 +93,7 @@ python tools/convert_datasets/cityscapes.py data/cityscapes --nproc 8
 python tools/convert_datasets/synthia.py data/synthia/ --nproc 8
 ```
 
-## Training
+## ✅ Training
 
 For the experiments in our paper, we use a script to automatically
 generate and train the configs:
@@ -108,7 +108,7 @@ in `configs/generated/`.
 
 (The core code will be available soon.)
 
-## Evaluation
+## ✅ Evaluation
 
 A trained model can be evaluated using:
 
@@ -134,7 +134,7 @@ respective dataset to obtain the test score.
 
 (The evalution code can in parallel with Train) (run the evalution code to validate the results.)
 
-## Checkpoints
+## 💾 Checkpoints
 
 Below, we provide checkpoints of UDASS(HRDA) for the different benchmarks.
 
@@ -148,7 +148,7 @@ The checkpoints should be placed in ./work_dirs. Please note that:
 * For Synthia→Cityscapes, it is necessary to convert the mIoU to the 16 valid classes. Please, read the
   section above for converting the mIoU.
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 Image-UDASS is based on the following open-source projects. We thank their
 authors for making the source code publicly available.
