@@ -66,7 +66,7 @@ If you find UDASS useful in your research, please consider citing:
 ```bibtex
 @misc{zhang2024udass,
       title={Unified Domain Adaptive Semantic Segmentation}, 
-      author={Zhe Zhang and Gaochang Wu and Jing Zhang and Chunhua Shen and Dacheng Tao and Tianyou Chai},
+      author={Zhe Zhang and Gaochang Wu and Jing Zhang and Xiatian Zhu and Dacheng Tao and Tianyou Chai},
       year={2024},
       eprint={2311.13254},
       archivePrefix={arXiv},
