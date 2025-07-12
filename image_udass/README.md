@@ -51,7 +51,7 @@ conda install -c menpo opencv
 pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
 ```
 
-2. clone the [ADVENT repo](https://leftgithub.com/valeoai/ADVENT) （only required video UDASS）
+2. clone the [ADVENT repo](https://leftgithub.com/valeoai/ADVENT) （only required for video UDASS）
 
 ```bash
 git clone https://github.com/valeoai/ADVENT
@@ -64,7 +64,7 @@ pip install -e ./VIDEO/ADVENT
 pip install -r ./requirements.txt
 ```
 
-4. resample2d dependency:（only required video UDASS）
+4. resample2d dependency:（only required for video UDASS）
 
 ```
 cd ./video_udass/VIDEO/tps/utils/resample2d_package
@@ -121,6 +121,8 @@ python tools/convert_datasets/synthia.py data/synthia/ --nproc 8
 ```
 
 ## ✅ Evaluation
+
+First, pls `cd ./Unified_UDASS/udass/image_udass/seg`
 
 A trained model can be evaluated using:
 

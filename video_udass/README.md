@@ -82,24 +82,24 @@ pip install mmcv-full==1.3.7  # requires other packeges to be installed first
 1. [Cityscapes-Seq](https://www.cityscapes-dataset.com/)
 
 ```
-VIDEO/data/Cityscapes/
-VIDEO/data/Cityscapes/leftImg8bit_sequence/
-VIDEO/data/Cityscapes/gtFine/
+/video_udass/VIDEO/data/Cityscapes/
+/video_udass/video_udass/VIDEO/data/Cityscapes/leftImg8bit_sequence/
+/video_udass/video_udass/VIDEO/data/Cityscapes/gtFine/
 ```
 
 2. [VIPER](https://playing-for-bencVhmarks.org/download/)
 
 ```
-VIDEO/data/Viper/
-VIDEO/data/Viper/train/img/
-VIDEO/data/Viper/train/cls/
+/video_udass/VIDEO/data/Viper/
+/video_udass/VIDEO/data/Viper/train/img/
+/video_udass/VIDEO/data/Viper/train/cls/
 ```
 
 3. [Synthia-Seq](http://synthia-dataset.cvc.uab.cat/SYNTHIA_SEQS/SYNTHIA-SEQS-04-DAWN.rar)
 
 ```
-VIDEO/data/SynthiaSeq/
-VIDEO/data/SynthiaSeq/SEQS-04-DAWN/
+/video_udass/VIDEO/data/SynthiaSeq/
+/video_udass/VIDEO/data/SynthiaSeq/SEQS-04-DAWN/
 ```
 
 ## 📁 Optical Flow Estimation
@@ -110,6 +110,8 @@ VIDEO/data/SynthiaSeq/SEQS-04-DAWN/
 2. Unzip the files of [video_udass/Code_for_Optical_Flow_Estimation.zip](https://github.com/ZHE-SAPI/UDASS/blob/main/video_udass/Code_for_Optical_Flow_Estimation.zip) and put them in the folder of sdcnet;
 3. Run the shell scripts to generate optical flow:
    ```
+   cd ./video_udass/Code_for_Optical_Flow_Estimation/
+
    [1] CItyscapes validation set: "python Cityscapes_val_optical_flow_scale512.py --pretrained ../pretrained_models/sdc_cityscapes_vrec.pth.tar --flownet2_checkpoint ../pretrained_models/FlowNet2_checkpoint.pth.tar --source_dir ../../data/Cityscapes --target_dir Cityscapes_val_optical_flow_scale512 --vis --resize 0.5"
 
    [2] SynthiaSeq train set: "python Estimated_optical_flow_SynthiaSeq_train.py --pretrained ../pretrained_models/sdc_cityscapes_vrec.pth.tar --flownet2_checkpoint ../pretrained_models/FlowNet2_checkpoint.pth.tar --source_dir ../../data/SynthiaSeq/SEQS-04-DAWN/rgb --target_dir Estimated_optical_flow_SynthiaSeq_train --vis --resize 0.533333"
