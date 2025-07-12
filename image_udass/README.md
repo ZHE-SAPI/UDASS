@@ -40,7 +40,7 @@
 
 ## ⚙️ Environment Setup
 
-##### **A unified environmentapplicable to both image and video UDASS.**
+##### **A unified environment applicable to both image and video UDASS.**
 
 1. create conda environment
 
