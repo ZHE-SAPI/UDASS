@@ -1,0 +1,3 @@
+# ninja log v5
+13	22822	1752190554464652803	/home/sysmanager/customer/Desktop/ZZ/FMFSemi/TransferLearning/examples/domain_adaptation/udass/video_udass/VIDEO/tps/utils/resample2d_package/build/temp.linux-x86_64-cpython-38/resample2d_kernel.o	b5e3354508707a21
+0	29806	1752190561424649459	/home/sysmanager/customer/Desktop/ZZ/FMFSemi/TransferLearning/examples/domain_adaptation/udass/video_udass/VIDEO/tps/utils/resample2d_package/build/temp.linux-x86_64-cpython-38/resample2d_cuda.o	d20c5109e8afb5ad

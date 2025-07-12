@@ -1,0 +1,33 @@
+SOURCE: Viper
+DATA_DIRECTORY_SOURCE: /home/sysmanager/customer/Desktop/ZZ/FMFSemi/TransferLearning/examples/domain_adaptation/video_seg/TPS/data/Viper
+DATA_LIST_SOURCE: tps/dataset/Viper_list/train.txt
+NUM_CLASSES: 15
+NUM_WORKERS: 4
+DATA_DIRECTORY_TARGET: /home/sysmanager/customer/Desktop/ZZ/FMFSemi/TransferLearning/examples/domain_adaptation/video_seg/TPS/data/Cityscapes
+
+TRAIN:
+  LEARNING_RATE: 0.0001
+  EARLY_STOP: 40000
+  LAMBDA_T: 0.1
+  flow_path: '/home/sysmanager/customer/Desktop/ZZ/FMFSemi/TransferLearning/examples/domain_adaptation/video_seg/TPS/tps/data/estimated_optical_flow_cityscapes_seq_train'
+
+  SCALING_RATIO:
+    - 0.8
+    - 1.2
+  flow_path_src: /home/sysmanager/customer/Desktop/ZZ/FMFSemi/TransferLearning/examples/domain_adaptation/video_seg/TPS/tps/data/estimated_optical_flow_viper_train
+  DA_METHOD: TPS
+  INFO_TARGET: tps/dataset/CityscapesSeq_list/info_Viper.json
+  INPUT_SIZE_SOURCE:
+      - 1280
+      - 720
+  SAVE_PRED_EVERY: 1000
+ 
+
+TEST:
+  
+  flow_path: '/home/sysmanager/customer/Desktop/ZZ/FMFSemi/TransferLearning/examples/domain_adaptation/video_seg/TPS/tps/data/estimated_optical_flow_cityscapes_seq_val'
+
+  MODE: video_best # video_single, video_best
+  INFO_TARGET: tps/dataset/CityscapesSeq_list/info_Viper.json
+  SNAPSHOT_STEP: 1000
+  SNAPSHOT_START_ITER: 1000
