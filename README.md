@@ -1,4 +1,3 @@
-
 # UDASS
 
 The official repository for **Unified Domain Adaptive Semantic Segmentation (UDASS)**.
@@ -12,7 +11,7 @@ The official repository for **Unified Domain Adaptive Semantic Segmentation (UDA
 
 ## 🗞️ News
 
-- 🎉 **2025.07.12**: We have released the complete source code!Feel free to contact us if you have any questions, we are happy to discuss!
+- 🎉 **2025.07.12**: We have released the complete source code! Feel free to contact us if you have any questions, we are happy to discuss!
 - 🎉 If you find **UDASS** helpful in your research, please consider giving us a ⭐ on GitHub and citing our work in your publications!
 - 🎉 **2025.04.25**: Our paper has been **accepted by IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)**, 2025!
 
