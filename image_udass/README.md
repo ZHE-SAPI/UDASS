@@ -124,7 +124,7 @@ python tools/convert_datasets/synthia.py data/synthia/ --nproc 8
 
 First, pls ` cd ./Unified_UDASS/udass/image_udass/seg`
 
-A trained model can be evaluated using:
+A trained model can be evaluated using: (please keep the statements in the table below for each task and comment out (or remove) the other settings.)
 
 |               Task               |                                                                             Command Usage in `/image_udass/seg/test.sh`                                                                             | Modification in `/image_udass/seg/mmseg/models/uda/__init__.py` |
 | :-------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------: |
@@ -158,7 +158,7 @@ The predictions can be submitted to the public evaluation server of the respecti
 
 For the experiments in our paper, we use a script to automatically generate and train the configs.
 
-Specifically, pls first  `cd ./Unified_UDASS/udass/image_udass/seg`,  then:
+Specifically, pls first  `cd ./Unified_UDASS/udass/image_udass/seg`,  then: (please keep the statements in the table below for each task and comment out (or remove) the other settings.)
 
 | Task            | Command                                                                       | Modification in `/image_udass/seg/tools/train.py`                                                                                                                                              | Modification in `/image_udass/seg/mmseg/models/uda/__init__.py` | Modification in `/image_udass/seg/mmseg/models/uda/ok/dacs_xxx.py` |
 | --------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- | -------------------------------------------------------------------- |
