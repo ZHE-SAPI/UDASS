@@ -121,18 +121,18 @@ pip install mmcv-full==1.3.7  # requires other packeges to be installed first
 
 ✅ You can also download the estimated optical flow of all datasets here, and put them as subfolders in the [./VIDEO/data](https://github.com/ZHE-SAPI/UDASS/tree/main/video_udass/VIDEO/data) folder.
 
-|            Dataset            |  Folder Name  |                           Download Link                           |                      Relative Path                      |
-| :----------------------------: | :------------: | :---------------------------------------------------------------: | :------------------------------------------------------: |
-|  **Synthia-Seq_train**  | train_folder 1 | [Download](https://pan.baidu.com/s/1pWuMpJBkLUMetjzIx9dbKA?pwd=unif) |   TPS/tps/data/estimated_optical_flow_synthiaseq_train   |
-|     **VIPER_train**     | train_folder 1 | [Download](https://pan.baidu.com/s/1IedArcO6OW7fXzs4NvFPIw?pwd=unif) |     TPS/tps/data/estimated_optical_flow_viper_train     |
-|                                | train_folder 2 | [Download](https://pan.baidu.com/s/1DPSDZJytSJYvmlr4SksRKA?pwd=unif) |                                                          |
-|                                | train_folder 3 | [Download](https://pan.baidu.com/s/1xbkKml5tn1Bvmzskue1pLQ?pwd=unif) |                                                          |
-|                                | train_folder 4 | [Download](https://pan.baidu.com/s/1PLZfMKwCNxr65SAnCQbSQw?pwd=unif) |                                                          |
-|                                | train_folder 5 | [Download](https://pan.baidu.com/s/1gsTDkKa3unAy5jsfxJR86w?pwd=unif) |                                                          |
-| **Cityscapes-Seq_train** | train_folder 1 | [Download](https://pan.baidu.com/s/1SQZp6bqXJih9hBFeDO2fjA?pwd=unif) | TPS/tps/data/estimated_optical_flow_cityscapes_seq_train |
-|                                | train_folder 2 | [Download](https://pan.baidu.com/s/19rIzZ6KYyo5KR_ikGSOfGA?pwd=unif) |                                                          |
-|                                | train_folder 3 | [Download](https://pan.baidu.com/s/1y2XYYJW8MNY0RceZBOvviA?pwd=unif) |                                                          |
-|  **Cityscapes-Seq_val**  |   val folder   | [Download](https://pan.baidu.com/s/10JBF43JeFMFjGSr5e8ittw?pwd=unif) |  TPS/tps/data/estimated_optical_flow_cityscapes_seq_val  |
+|            Dataset            |  Folder Name  |                           Download Link                           |                     Relative Path                     |
+| :----------------------------: | :------------: | :---------------------------------------------------------------: | :----------------------------------------------------: |
+|  **Synthia-Seq_train**  | train_folder 1 | [Download](https://pan.baidu.com/s/1pWuMpJBkLUMetjzIx9dbKA?pwd=unif) |   ./tps/data/estimated_optical_flow_synthiaseq_train   |
+|     **VIPER_train**     | train_folder 1 | [Download](https://pan.baidu.com/s/1IedArcO6OW7fXzs4NvFPIw?pwd=unif) |     ./tps/data/estimated_optical_flow_viper_train     |
+|                                | train_folder 2 | [Download](https://pan.baidu.com/s/1DPSDZJytSJYvmlr4SksRKA?pwd=unif) |                                                        |
+|                                | train_folder 3 | [Download](https://pan.baidu.com/s/1xbkKml5tn1Bvmzskue1pLQ?pwd=unif) |                                                        |
+|                                | train_folder 4 | [Download](https://pan.baidu.com/s/1PLZfMKwCNxr65SAnCQbSQw?pwd=unif) |                                                        |
+|                                | train_folder 5 | [Download](https://pan.baidu.com/s/1gsTDkKa3unAy5jsfxJR86w?pwd=unif) |                                                        |
+| **Cityscapes-Seq_train** | train_folder 1 | [Download](https://pan.baidu.com/s/1SQZp6bqXJih9hBFeDO2fjA?pwd=unif) | ./tps/data/estimated_optical_flow_cityscapes_seq_train |
+|                                | train_folder 2 | [Download](https://pan.baidu.com/s/19rIzZ6KYyo5KR_ikGSOfGA?pwd=unif) |                                                        |
+|                                | train_folder 3 | [Download](https://pan.baidu.com/s/1y2XYYJW8MNY0RceZBOvviA?pwd=unif) |                                                        |
+|  **Cityscapes-Seq_val**  |   val folder   | [Download](https://pan.baidu.com/s/10JBF43JeFMFjGSr5e8ittw?pwd=unif) |  ./tps/data/estimated_optical_flow_cityscapes_seq_val  |
 
 Please merge different `train_folder` parts of the same dataset (e.g., `train_folder 1`, `train_folder 2`, etc.) into a single directory for consistency and ease of access.
 

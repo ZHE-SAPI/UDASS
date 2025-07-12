@@ -122,16 +122,16 @@ python tools/convert_datasets/synthia.py data/synthia/ --nproc 8
 
 ## ✅ Evaluation
 
-First, pls `cd ./Unified_UDASS/udass/image_udass/seg`
+First, pls ` cd ./Unified_UDASS/udass/image_udass/seg`
 
 A trained model can be evaluated using:
 
-|               Task               |                                                                                      Command Usage in `test.sh`                                                                                      |                 Modification in `__init__.py`                 |
-| :-------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------: |
-|   transformer_GTA → Cityscapes   |   ``bash<br>TEST_ROOT=$1<br>CONFIG_FILE="${TEST_ROOT}/gtaHR2csHR_udass_hrda_650a8.py"<br>CHECKPOINT_FILE="${TEST_ROOT}/udass_image_gta_trans.pth"<br>SHOW_DIR="${TEST_ROOT}/preds_gta_trans_udass"``   |   ``python<br>from mmseg.models.uda.ok.dacs_gta import DACS``   |
-| transformer_Synthia → Cityscapes | ``bash<br>TEST_ROOT=$1<br>CONFIG_FILE="${TEST_ROOT}/synthiaHR2csHR_udass_hrda_650a8.py"<br>CHECKPOINT_FILE="${TEST_ROOT}/udass_image_syn_trans.pth"<br>SHOW_DIR="${TEST_ROOT}/preds_syn_trans_udass"`` |   ``python<br>from mmseg.models.uda.ok.dacs_syn import DACS``   |
-|     cnn_Synthia → Cityscapes     |    ``bash<br>TEST_ROOT=$1<br>CONFIG_FILE="${TEST_ROOT}/synthiaHR2csHR_udass_hrda_cnn.py"<br>CHECKPOINT_FILE="${TEST_ROOT}/udass_image_syn_cnn.pth"<br>SHOW_DIR="${TEST_ROOT}/preds_syn_cnn_udass"``    | ``python<br>from mmseg.models.uda.ok.dacs_syn_cnn import DACS`` |
-|       cnn_GTA → Cityscapes       |      ``bash<br>TEST_ROOT=$1<br>CONFIG_FILE="${TEST_ROOT}/gtaHR2csHR_udass_hrda_cnn.py"<br>CHECKPOINT_FILE="${TEST_ROOT}/udass_image_gta_cnn.pth"<br>SHOW_DIR="${TEST_ROOT}/preds_gta_cnn_udass"``      | ``python<br>from mmseg.models.uda.ok.dacs_gta_cnn import DACS`` |
+|               Task               |                                                                             Command Usage in `/image_udass/seg/test.sh`                                                                             | Modification in `/image_udass/seg/mmseg/models/uda/__init__.py` |
+| :-------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------: |
+|   transformer_GTA → Cityscapes   |   ``bash<br>TEST_ROOT=$1<br>CONFIG_FILE="${TEST_ROOT}/gtaHR2csHR_udass_hrda_650a8.py"<br>CHECKPOINT_FILE="${TEST_ROOT}/udass_image_gta_trans.pth"<br>SHOW_DIR="${TEST_ROOT}/preds_gta_trans_udass"``   |    ``python<br>from mmseg.models.uda.ok.dacs_gta import DACS``    |
+| transformer_Synthia → Cityscapes | ``bash<br>TEST_ROOT=$1<br>CONFIG_FILE="${TEST_ROOT}/synthiaHR2csHR_udass_hrda_650a8.py"<br>CHECKPOINT_FILE="${TEST_ROOT}/udass_image_syn_trans.pth"<br>SHOW_DIR="${TEST_ROOT}/preds_syn_trans_udass"`` |    ``python<br>from mmseg.models.uda.ok.dacs_syn import DACS``    |
+|     cnn_Synthia → Cityscapes     |    ``bash<br>TEST_ROOT=$1<br>CONFIG_FILE="${TEST_ROOT}/synthiaHR2csHR_udass_hrda_cnn.py"<br>CHECKPOINT_FILE="${TEST_ROOT}/udass_image_syn_cnn.pth"<br>SHOW_DIR="${TEST_ROOT}/preds_syn_cnn_udass"``    |  ``python<br>from mmseg.models.uda.ok.dacs_syn_cnn import DACS``  |
+|       cnn_GTA → Cityscapes       |      ``bash<br>TEST_ROOT=$1<br>CONFIG_FILE="${TEST_ROOT}/gtaHR2csHR_udass_hrda_cnn.py"<br>CHECKPOINT_FILE="${TEST_ROOT}/udass_image_gta_cnn.pth"<br>SHOW_DIR="${TEST_ROOT}/preds_gta_cnn_udass"``      |  ``python<br>from mmseg.models.uda.ok.dacs_gta_cnn import DACS``  |
 
 The checkpoints should be downloaded and be put in ./work_dirs.
 
@@ -160,12 +160,12 @@ For the experiments in our paper, we use a script to automatically generate and 
 
 Specifically, pls first  `cd ./Unified_UDASS/udass/image_udass/seg`,  then:
 
-| Task            | Command                                                                       | Modification in `train.py`                                                                                                                                                                     | Modification in `__init__.py`                       | Modification in `dacs_xxx.py` |
-| --------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- | ------------------------------- |
-| transformer_gta | `python run_experiments.py --config configs/mic/gtaHR2csHR_mic_hrda.py`     | `cfg.resume_from = './work_dirs/local-basic/240810_0952_gtaHR2csHR_mic_hrda_s2_a891a/iter_4000.pth'`                                                                                           | `from mmseg.models.uda.ok.dacs_gta import DACS`     | `self.local_iter = 4000`      |
-| transformer_syn | `python run_experiments.py --config configs/mic/synthiaHR2csHR_mic_hrda.py` | `cfg.resume_from = './work_dirs/local-basic/240810_0955_synthiaHR2csHR_mic_hrda_s2_ade8e/iter_3000.pth'`                                                                                       | `from mmseg.models.uda.ok.dacs_syn import DACS`     | `self.local_iter = 3000`      |
-| cnn_syn         | `python run_experiments.py --exp 821`                                       | `cfg.resume_from = './work_dirs/local-basic/240810_1333_synHR2csHR_1024x1024_dacs_a999_fdthings_rcs001-20_cpl2_m64-07-spta_hrda1-512-01_dlv2red_sl_r101v1c_poly10warm_s0_b6485/iter_6000.pth'` | `from mmseg.models.uda.ok.dacs_syn_cnn import DACS` | `self.local_iter = 6000`      |
-| cnn_gta         | `python run_experiments.py --exp 811`                                       | `cfg.resume_from = './work_dirs/local-basic/240810_1332_gtaHR2csHR_1024x1024_dacs_a999_fdthings_rcs001-20_cpl2_m64-07-spta_hrda1-512-01_dlv2red_sl_r101v1c_poly10warm_s0_710e9/iter_6000.pth'` | `from mmseg.models.uda.ok.dacs_gta_cnn import DACS` | `self.local_iter = 6000`      |
+| Task            | Command                                                                       | Modification in `/image_udass/seg/tools/train.py`                                                                                                                                              | Modification in `/image_udass/seg/mmseg/models/uda/__init__.py` | Modification in `dacs_xxx.py` |
+| --------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- | ------------------------------- |
+| transformer_gta | `python run_experiments.py --config configs/mic/gtaHR2csHR_mic_hrda.py`     | `cfg.resume_from = './work_dirs/local-basic/240810_0952_gtaHR2csHR_mic_hrda_s2_a891a/iter_4000.pth'`                                                                                           | `from mmseg.models.uda.ok.dacs_gta import DACS`                 | `self.local_iter = 4000`      |
+| transformer_syn | `python run_experiments.py --config configs/mic/synthiaHR2csHR_mic_hrda.py` | `cfg.resume_from = './work_dirs/local-basic/240810_0955_synthiaHR2csHR_mic_hrda_s2_ade8e/iter_3000.pth'`                                                                                       | `from mmseg.models.uda.ok.dacs_syn import DACS`                 | `self.local_iter = 3000`      |
+| cnn_syn         | `python run_experiments.py --exp 821`                                       | `cfg.resume_from = './work_dirs/local-basic/240810_1333_synHR2csHR_1024x1024_dacs_a999_fdthings_rcs001-20_cpl2_m64-07-spta_hrda1-512-01_dlv2red_sl_r101v1c_poly10warm_s0_b6485/iter_6000.pth'` | `from mmseg.models.uda.ok.dacs_syn_cnn import DACS`             | `self.local_iter = 6000`      |
+| cnn_gta         | `python run_experiments.py --exp 811`                                       | `cfg.resume_from = './work_dirs/local-basic/240810_1332_gtaHR2csHR_1024x1024_dacs_a999_fdthings_rcs001-20_cpl2_m64-07-spta_hrda1-512-01_dlv2red_sl_r101v1c_poly10warm_s0_710e9/iter_6000.pth'` | `from mmseg.models.uda.ok.dacs_gta_cnn import DACS`             | `self.local_iter = 6000`      |
 
 More information about the available experiments and their assigned IDs, can be found in [experiments.py](experiments.py). The generated configs will be stored in `configs/generated/`.
 
@@ -175,7 +175,7 @@ Our training follows the same paradigm as [MIC ](https://github.com/lhoyer/MIC/t
 
 Below, we first provide MIC's intermediate checkpoints for the different benchmarks.
 
-Download [checkpoints folder](https://pan.baidu.com/s/1nB0Ii3bxlyd9adreiRi_HQ?pwd=hphf) (code: hphf) for  transformer_gta,  transformer_syn,  cnn_syn,  cnn_gta, and placed it in `./work_dirs/local-basic`.
+Download [checkpoints folder](https://pan.baidu.com/s/1nB0Ii3bxlyd9adreiRi_HQ?pwd=hphf) (Access code: hphf) for  transformer_gta,  transformer_syn,  cnn_syn,  cnn_gta, and placed it in `./work_dirs/local-basic`.
 
 Alternatively, training can aslo start from iteration 0.
 

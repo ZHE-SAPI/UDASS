@@ -1,6 +1,6 @@
 # UDASS
 
-The official repository for **Unified Domain Adaptive Semantic Segmentation (UDASS)**.
+The official repository for **Unified Domain Adaptive Semantic Segmentation (TPAMI 2025)**.
 
 |    Resource     |                                                             Link                                                             |
 | :-------------: | :--------------------------------------------------------------------------------------------------------------------------: |
