@@ -57,7 +57,7 @@ git clone https://github.com/valeoai/ADVENT
 pip install -e ./VIDEO/ADVENT
 ```
 
-3. clone the current repo
+3. install requirements
 
 ```bash
 pip install -r ./requirements.txt
@@ -148,10 +148,13 @@ Additionally, modify the paths in the `scripts_ablation` to match your actual pr
   cd /video_udass/VIDEO (Please adjust according to the actual address of your device manually )
   # syn2city CNN
   python ./tps/scripts_ablation/train_DAVSS_DSF_cd_ablation_24.py --cfg ./tps/scripts_ablation/configs/tps_syn2city.yml
+
   # viper2city CNN
   python ./tps/scripts_ablation/train_DAVSS_DSF_cd_ablation_31.py --cfg ./tps/scripts_ablation/configs/tps_viper2city.yml
+
   # syn2city ViT
   python ./tps/scripts_ablation/train_DAVSS_DSF_cd_ablation_24_former.py --cfg ./tps/scripts_ablation/configs/tps_syn2city.yml
+
   # tps_viper2city ViT
   python ./tps/scripts_ablation/train_DAVSS_DSF_cd_ablation_31_former.py --cfg ./tps/scripts_ablation/configs/tps_viper2city.yml
 ```
@@ -162,10 +165,13 @@ Additionally, modify the paths in the `scripts_ablation` to match your actual pr
   cd /video_udass/VIDEO
   # syn2city CNN
   python ./tps/scripts_ablation/test_DAVSS_DSF_cd_ablation_24.py --cfg ./tps/scripts_ablation/configs/tps_syn2city.yml
+
   # viper2city CNN
   python ./tps/scripts_ablation/test_DAVSS_DSF_cd_ablation_31.py --cfg ./tps/scripts_ablation/configs/tps_viper2city.yml
+
   # syn2city ViT
   python ./tps/scripts_ablation/test_DAVSS_DSF_cd_ablation_24_former.py --cfg ./tps/scripts_ablation/configs/tps_syn2city.yml
+
   # viper2city ViT
   python ./tps/scripts_ablation/test_DAVSS_DSF_cd_ablation_31_former.py --cfg ./tps/scripts_ablation/configs/tps_viper2city.yml
 ```

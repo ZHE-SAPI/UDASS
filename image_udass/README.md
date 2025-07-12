@@ -51,20 +51,20 @@ conda install -c menpo opencv
 pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
 ```
 
-2. clone the [ADVENT repo](https://leftgithub.com/valeoai/ADVENT)
+2. clone the [ADVENT repo](https://leftgithub.com/valeoai/ADVENT) （only required video UDASS）
 
 ```bash
 git clone https://github.com/valeoai/ADVENT
 pip install -e ./VIDEO/ADVENT
 ```
 
-3. clone the current repo
+3. install requirements
 
 ```bash
 pip install -r ./requirements.txt
 ```
 
-4. resample2d dependency:
+4. resample2d dependency:（only required video UDASS）
 
 ```
 cd ./video_udass/VIDEO/tps/utils/resample2d_package
