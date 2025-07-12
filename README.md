@@ -1,12 +1,14 @@
+
 # UDASS
 
 The official repository for **Unified Domain Adaptive Semantic Segmentation (UDASS)**.
 
-|       Resource        |                                                      Link                                                       |
-| :-------------------: | :-------------------------------------------------------------------------------------------------------------: |
-|    📄 Paper (arXiv)    |                              [arXiv:2311.13254](https://arxiv.org/abs/2311.13254)                               |
-| 📄 Paper (IEEE Xplore) |                     [IEEE Xplore: 10972076](https://ieeexplore.ieee.org/document/10972076)                      |
-|     🎬 Demo Video      | [Demo Video (Google Drive)](https://drive.google.com/file/d/1OT5GtsbC0CcW6aydBL27ADjve95YE5oj/view?usp=sharing) |
+|    Resource     |                                                             Link                                                             |
+| :-------------: | :--------------------------------------------------------------------------------------------------------------------------: |
+|      📄 PDF      | [Paper and Supplementary Material](https://github.com/ZHE-SAPI/UDASS/blob/master/Paper%20and%20Supplementary%20Material.pdf) |
+|  📄 IEEE Xplore  |                            [IEEE Xplore: 10972076](https://ieeexplore.ieee.org/document/10972076)                            |
+| 📄 Paper (Arxiv) |                                          [Arxiv](https://arxiv.org/abs/2311.13254)                                           |
+|  🎬 Video Demo   |       [Demo Video (Google Drive)](https://drive.google.com/file/d/1OT5GtsbC0CcW6aydBL27ADjve95YE5oj/view?usp=sharing)        |
 
 ## 🗞️ News
 
@@ -34,7 +36,7 @@ To this end, we introduce a general data augmentation perspective as a unifying 
 
 ## 🧩Click to Watch More Qualitative Results
 
-[![Watch demo video](https://github.com/ZHE-SAPI/UDASS/blob/main/Unified-UDASS.jpg?raw=true)](https://youtu.be/DgrZYkebhs0)
+[![Watch demo video](https://github.com/ZHE-SAPI/UDASS/blob/master/Unified-UDASS.jpg)](https://youtu.be/DgrZYkebhs0)
 
 You can also find the demo video on:
 
@@ -47,17 +49,17 @@ You can also find the demo video on:
 
 ## 🧩 UDASS for Image Scenarios
 
-Source code for image-based UDA-SS is located in the [`/image_udass`](https://github.com/ZHE-SAPI/UDASS/tree/main/image_udass) directory.
+Source code for image-based UDA-SS is located in the [`/image_udass`](https://github.com/ZHE-SAPI/UDASS/tree/master/image_udass) directory.
 
-For setup and training instructions, refer to the [image_udass/README.md](https://github.com/ZHE-SAPI/UDASS/blob/main/image_udass/seg/README.md).
+For setup and training instructions, refer to the [image_udass/README.md](https://github.com/ZHE-SAPI/UDASS/tree/master/image_udass/seg/README.md).
 
 ---
 
 ## 🧩UDASS for Video Scenarios
 
-Source code for video-based UDA-SS is located in the [`/video_udass`](https://github.com/ZHE-SAPI/UDASS/tree/main/video_udass) directory.
+Source code for video-based UDA-SS is located in the [`/video_udass`](https://github.com/ZHE-SAPI/UDASS/tree/master/video_udass) directory.
 
-For setup and training instructions, refer to the [video_udass/README.md](https://github.com/ZHE-SAPI/UDASS/blob/main/video_udass/VIDEO/README.md).
+For setup and training instructions, refer to the [video_udass/README.md](https://github.com/ZHE-SAPI/UDASS/tree/master/video_udass/VIDEO/README.md).
 
 ---
 
