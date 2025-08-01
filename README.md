@@ -9,6 +9,24 @@ The official repository for **Unified Domain Adaptive Semantic Segmentation (TPA
 | 📄 Paper (Arxiv) |                                          [Arxiv](https://arxiv.org/abs/2311.13254)                                           |
 |  🎬 Video Demo   |       [Demo Video (Google Drive)](https://drive.google.com/file/d/1OT5GtsbC0CcW6aydBL27ADjve95YE5oj/view?usp=sharing)        |
 
+
+## 🧩 UDASS for Image Scenarios
+
+Source code for image-based UDA-SS is located in the [`/image_udass`](https://github.com/ZHE-SAPI/UDASS/tree/master/image_udass) directory.
+
+For setup and training instructions, refer to the [image_udass/README.md](https://github.com/ZHE-SAPI/UDASS/tree/master/image_udass/seg/README.md).
+
+---
+
+## 🧩UDASS for Video Scenarios
+
+Source code for video-based UDA-SS is located in the [`/video_udass`](https://github.com/ZHE-SAPI/UDASS/tree/master/video_udass) directory.
+
+For setup and training instructions, refer to the [video_udass/README.md](https://github.com/ZHE-SAPI/UDASS/tree/master/video_udass/VIDEO/README.md).
+
+---
+
+
 ## 🗞️ News
 
 - 🎉 **2025.07.12**: We have released the complete source code! Feel free to contact us if you have any questions, we are happy to discuss!
@@ -46,21 +64,6 @@ You can also find the demo video on:
 
 ---
 
-## 🧩 UDASS for Image Scenarios
-
-Source code for image-based UDA-SS is located in the [`/image_udass`](https://github.com/ZHE-SAPI/UDASS/tree/master/image_udass) directory.
-
-For setup and training instructions, refer to the [image_udass/README.md](https://github.com/ZHE-SAPI/UDASS/tree/master/image_udass/seg/README.md).
-
----
-
-## 🧩UDASS for Video Scenarios
-
-Source code for video-based UDA-SS is located in the [`/video_udass`](https://github.com/ZHE-SAPI/UDASS/tree/master/video_udass) directory.
-
-For setup and training instructions, refer to the [video_udass/README.md](https://github.com/ZHE-SAPI/UDASS/tree/master/video_udass/VIDEO/README.md).
-
----
 
 ## 📚 Citation
 
