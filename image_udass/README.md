@@ -38,6 +38,20 @@
 |        Freedom(ViT)        | **89.4** |      50.8      | **89.3** | **48.8** |      9.3      |        57.3        | **65.1** |        60.1        | **89.9** |        93.7        |        79.4        |        51.6        |      90.5      |        66.0        |        62.3        | **68.1** |        67.0        |        73.6        |
 | ***QuadMix(ViT)*** |    *88.1*    |    *51.2*    |    *88.9*    |    *46.7*    |    *7.9*    | ***58.6*** |    *64.7*    | ***63.7*** |    *88.1*    | ***93.9*** | ***81.3*** | ***56.6*** |    *90.3*    | ***66.9*** | ***66.8*** |    *66.0*    | ***67.5*** | ***74.3*** |
 
+
+##  ✅ Update 2025.08.14
+
+Our method can of course be applied to more image UDASS benchmarks, such as **Cityscapes → ACDC** and **Cityscapes → DarkZurich**. Taking Cityscapes → DarkZurich as an example, I have write a new code [dacs_cityscape2darkzurich_v2_bs1.py](https://github.com/ZHE-SAPI/UDASS/blob/master/image_udass/seg/mmseg/models/uda/ok/dacs_cityscape2darkzurich_v2_bs1.py).  
+
+You only need to place it in the folder:  
+`https://github.com/ZHE-SAPI/UDASS/tree/master/image_udass/seg/mmseg/models/uda/ok`  
+
+Then, in `/image_udass/seg/mmseg/models/uda/__init__.py`, import `dacs_cityscape2darkzurich_v2_bs1.py` and set the basic details such as source and target datasets information as mentioned in this readme file. 
+
+For more information, please refer to the [discussion](https://github.com/ZHE-SAPI/UDASS/issues/3):  
+`https://github.com/ZHE-SAPI/UDASS/issues/3`
+
+
 ## ⚙️ Environment Setup
 
 ##### **A unified environment applicable to both image and video UDASS.**
@@ -182,6 +196,8 @@ Below, we first provide MIC's intermediate checkpoints for the different benchma
 Download [checkpoints folder](https://pan.baidu.com/s/1nB0Ii3bxlyd9adreiRi_HQ?pwd=hphf) (Access code: hphf) for  transformer_gta,  transformer_syn,  cnn_syn,  cnn_gta, and placed it in `./work_dirs/local-basic`.
 
 Alternatively, training can aslo start from iteration 0.
+
+
 
 ## Acknowledgements
 
