@@ -10,6 +10,7 @@ The official repository for **Unified Domain Adaptive Semantic Segmentation (TPA
 | 🎬 Video Demo          | [Demo Video (Bilibili)](https://www.bilibili.com/video/BV1ZgtMejErB/?vd_source=ae767173839d1c3a41173ad40cc34d53) |
 | 📄 Arxiv               | [ArXiv link](https://arxiv.org/abs/2311.13254) |
 | 📄 Other link          | [Other link](https://github.com/ZHE-SAPI/UDASS/blob/master/Paper%20and%20Supplementary%20Material.pdf)|
+| 💡 中文解读             | [中文解读](https://mp.weixin.qq.com/s/7UY_z2SZK77iI_v0NPSwwQ)|
 
 
 ## 🧩 UDASS for Image Scenarios
