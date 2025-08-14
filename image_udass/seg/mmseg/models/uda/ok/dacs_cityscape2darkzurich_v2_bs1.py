@@ -630,7 +630,7 @@ class DACS(UDADecorator):
                 pseudo_weight, valid_pseudo_mask)
             gt_pixel_weight = torch.ones((pseudo_weight.shape), device=dev)
 
-            if self.local_iter < 2:
+            if self.local_iter < 6000:
                 # Apply mixing
                 mixed_img, mixed_lbl = [None] * batch_size, [None] * batch_size
                 mixed_seg_weight = pseudo_weight.clone()
@@ -664,7 +664,7 @@ class DACS(UDADecorator):
                 log_vars.update(mix_log_vars)
                 mix_loss.backward()
             
-            elif self.local_iter >= 2:
+            elif self.local_iter >= 6000:
                     # Apply quad-mixing
                 # S2S
                 mixed_img_ss, mixed_lbl_ss = [None] * batch_size, [None] * batch_size
@@ -987,12 +987,12 @@ class DACS(UDADecorator):
         self.pseudo_weight_tmpl = pseudo_weight.detach().clone()
         
 
-        if self.local_iter > 0 and self.local_iter < 2:
+        if self.local_iter > 0 and self.local_iter < 6000:
             current_losses = { 'mix_loss': mix_loss, 'masked_loss': masked_loss}
             # print_losses(current_losses, self.local_iter)
             log_losses_tensorboard(self.writer, current_losses, self.local_iter)
  
-        elif self.local_iter >= 2:
+        elif self.local_iter >= 6000:
             current_losses = { 'mix_loss': (mix_tss_loss + mix_tst_loss), 'mix_tst_loss': mix_tst_loss, 'mix_tss_loss': mix_tss_loss, 'masked_loss': masked_loss}
             log_losses_tensorboard(self.writer, current_losses, self.local_iter)
             # print_losses(current_losses, self.local_iter)
