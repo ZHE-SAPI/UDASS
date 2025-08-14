@@ -7,6 +7,7 @@ The official repository for **Unified Domain Adaptive Semantic Segmentation (TPA
 | 📄 IEEE Xplore         | [IEEE Xplore: 10972076](https://ieeexplore.ieee.org/document/10972076) |
 | 📄 Supplemental Video and PDF | [IEEE Xplore](https://ieeexplore.ieee.org/document/10972076/media#media) |
 | 🎬 Video Demo          | [Demo Video (Google Drive)](https://drive.google.com/file/d/1OT5GtsbC0CcW6aydBL27ADjve95YE5oj/view?usp=sharing) |
+| 🎬 Video Demo          | [Demo Video (Bilibili)](https://www.bilibili.com/video/BV1ZgtMejErB/?vd_source=ae767173839d1c3a41173ad40cc34d53) |
 | 📄 Arxiv               | [arXiv link](https://arxiv.org/abs/2311.13254) |
 
 
